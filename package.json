@@ -1,0 +1,28 @@
+{
+  "name": "swapi-node-api",
+  "version": "1.0.0",
+  "description": "Backend Assessment - Blog Posts using Node + Express framework",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.16.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "celebrate": "^15.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-api-cache": "^1.0.4",
+    "express-async-handler": "^1.1.4",
+    "graphql-yoga": "^1.18.3",
+    "helmet": "^4.6.0",
+    "http-status-codes": "^2.1.4",
+    "joi": "^17.4.1",
+    "node-fetch": "^2.6.1",
+    "redis": "^3.1.2"
+  }
+}
