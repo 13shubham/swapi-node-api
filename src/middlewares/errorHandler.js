@@ -1,5 +1,8 @@
+const winston = require('winston');
+
 
 const errorHandler = (err, req, res, next) => {
+  winston.error(err.message, err);
   const statusCode = err.httpStatusCode;
   console.log(statusCode)
   console.log('error codes')
@@ -14,7 +17,7 @@ const errorHandler = (err, req, res, next) => {
     }
   };
 
-  res.status(statusCode).json(errorResponse.error.message);
+  res.status(500).json('Something Failed');
   next();
 };
 
